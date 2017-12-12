@@ -18,13 +18,13 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.innerHTML = myName + ' Triathlon Times';
+  myHeading.innerHTML =  myName  + ' Triathlon finish times';
 }
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
-  var storeName = localStorage.getItem('name');
-  myHeading.innerHTML = storedName + 'Triathon finish times';
+  var storedName = localStorage.getItem('name');
+  myHeading.innerHTML = storedName + ' Triathon finish times';
 }
 
 myButton.onclick = function () {
